@@ -179,7 +179,18 @@ def team_colors(team_name)
   end
 end
 
-def 
+def team_names
+  hashketball = game_hash
+  result_array = []
+  hashketball.each do |key, value|
+    
+    if key == :team_name
+      result_array << value
+    end
+ 
+  end
+  result_array
+end  
 
 
 
