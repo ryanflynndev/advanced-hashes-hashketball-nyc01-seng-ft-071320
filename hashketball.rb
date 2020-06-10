@@ -130,8 +130,9 @@ end
 # Write code here
 
 def num_points_scored(name)
+  
   hashketball = game_hash
-  binding.pry
+  
   hashketball.each do [key, value]
     binding.pry
   end
