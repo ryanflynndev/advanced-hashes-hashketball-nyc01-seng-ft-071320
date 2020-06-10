@@ -172,16 +172,10 @@ def team_colors(team_name)
   
   hashketball.each do |key, value|
     
-    value[:players].each do |inner_key, inner_value|
-      
-      inner_key.each do |stat_name, stat_value|
-        
-        if inner_key[stat_name] == name
-          return inner_key[:points]
-        end
-      end
-      
+    if value[:team_name] == team_name
+      return value[:colors]
     end
+ 
   end
 end
 
