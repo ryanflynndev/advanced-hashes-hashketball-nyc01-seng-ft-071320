@@ -137,8 +137,7 @@ def num_points_scored(name)
     
     value.each do |inner_key, inner_value|
       binding.pry
-      inner_key[:players].each do |player|
-        binding.pry
+      
       end
     end
   end
