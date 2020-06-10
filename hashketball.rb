@@ -148,8 +148,24 @@ def num_points_scored(name)
   end
 end
 
-
-
+def shoe_size(name)
+  
+  hashketball = game_hash
+  
+  hashketball.each do |key, value|
+    
+    value[:players].each do |inner_key, inner_value|
+      
+      inner_key.each do |stat_name, stat_value|
+        
+        if inner_key[stat_name] == name
+          return inner_key[:shoe]
+        end
+      end
+      
+    end
+  end
+end
 
 
 
