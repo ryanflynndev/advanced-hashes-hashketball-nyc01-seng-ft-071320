@@ -232,8 +232,8 @@ def big_shoe_rebounds
   end
   hashketball.each do |key, value|
     value[:players].each do |player|
-      if player[:shoe] > max_size
-        max_size = player[:shoe]
+      if player[:shoe] == max_size
+        return player[:rebounds]
       end
     end
   end
