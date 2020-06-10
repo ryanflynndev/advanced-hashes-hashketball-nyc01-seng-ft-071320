@@ -183,9 +183,10 @@ def team_names
   hashketball = game_hash
   result_array = []
   hashketball.each do |key, value|
-    
-    if key == :team_name
-      result_array << value
+    value.each do |inner_key, inner_value|
+      
+    if inner_key == :team_name
+      result_array << inner_value
     end
  
   end
