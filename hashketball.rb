@@ -137,6 +137,9 @@ def num_points_scored(name)
     
     value.each do |inner_key, inner_value|
       
+      inner_value.each do |stat_name, stat_value|
+        
+      end
     end
   end
 end
