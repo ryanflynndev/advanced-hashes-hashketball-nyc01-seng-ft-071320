@@ -208,12 +208,14 @@ def player_numbers(team_name)
   result_array
 end
 
-def player_stats (player_name)
+def player_stats (name)
   hashketball = game_hash
   
   hashketball.each do |key, value|
     value[:players].each do |player|
-      
+      if player[:player_name] == name 
+        return player
+      end
     end
   end
   
