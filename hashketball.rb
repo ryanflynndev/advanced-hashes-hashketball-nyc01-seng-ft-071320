@@ -138,7 +138,10 @@ def num_points_scored(name)
     value[:players].each do |inner_key, inner_value|
       
       inner_key.each do |stat_name, stat_value|
-        binding.pry
+        
+        if inner_key[stat_name] == name
+          return inner_key[:points]
+        end
       end
       
     end
