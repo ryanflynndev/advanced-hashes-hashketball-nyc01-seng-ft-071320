@@ -168,7 +168,21 @@ def shoe_size(name)
 end
 
 def team_colors(team_name)
+  hashketball = game_hash
   
+  hashketball.each do |key, value|
+    
+    value[:players].each do |inner_key, inner_value|
+      
+      inner_key.each do |stat_name, stat_value|
+        
+        if inner_key[stat_name] == name
+          return inner_key[:points]
+        end
+      end
+      
+    end
+  end
 end
 
 
