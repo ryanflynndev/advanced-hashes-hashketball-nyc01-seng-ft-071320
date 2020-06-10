@@ -197,6 +197,7 @@ def player_numbers(team_name)
   hashketball = game_hash
   result_array = []
   hashketball.each do |key, value|
+    binding.pry
     if hashketball[value] == :team_name
       
       value[:players].each do |inner_key, inner_value|
