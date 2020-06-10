@@ -221,7 +221,23 @@ def player_stats (name)
 end
 
 def big_shoe_rebounds
-  
+  hashketball = game_hash
+  max_size = -1
+  hashketball.each do |key, value|
+    value[:players].each do |player|
+      if player[:shoe] > max_size
+        max_size = player[:shoe]
+      end
+    end
+  end
+  hashketball.each do |key, value|
+    value[:players].each do |player|
+      if player[:shoe] > max_size
+        max_size = player[:shoe]
+      end
+    end
+  end
+end
   
 
 
