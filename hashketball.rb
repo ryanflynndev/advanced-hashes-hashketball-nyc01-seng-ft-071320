@@ -200,7 +200,7 @@ def player_numbers(team_name)
   hashketball.each do |key, value|
     binding.pry
     if value[:team_name] == team_name
-      value[:players].each do 
+      
     end
       
   end
