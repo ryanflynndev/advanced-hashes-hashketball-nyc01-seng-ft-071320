@@ -134,7 +134,10 @@ def num_points_scored(name)
   hashketball = game_hash
   
   hashketball.each do |key, value|
-    binding.pry
+    
+    value.each do |inner_key, inner_value|
+      binding.pry
+    end
   end
 end
 
